@@ -1,11 +1,11 @@
 // NOTE: BEgins Business Logic.
 
 
-function Pizza(size, topping) {
+function Pizza(size, toppings) {
   this.size = size;
-  this.toppings = "pepporoni";
-}
-//
+  this.toppings = toppings;
+  }
+  
 Pizza.prototype.cost = function() {
   if (this.size === "small") {
     return this.price = "$10.00";
