@@ -1,1 +1,12 @@
-.css
+.jumbotron {
+  background-image: url('../img/pizza-heading.jpg');
+  background-size: cover;
+}
+
+ p {
+  text-align: center;
+}
+
+.center{
+  text-align: center;
+}

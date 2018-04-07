@@ -9,26 +9,44 @@
   </head>
   <body>
     <div class="container-fluid">
-      <div class="jumbotron text-center">
+      <div class="jumbotron text-right" style="height: 400px;">
         <h1>Suzy's Pizza Pie</h1>
       </div>
-      <form class="form-group" id="convertor">
-        <div class="form-control">
-          <label for="number">Please enter a number.</label>
-          <input type="text" id="userInput" class="form-control">
-        </div>
-        <br>
-
+      <form class="form-group" id="welcome">
         <div class="row">
-          <div class="col-md-6">
-            <button type="submit" class="btn btn-success btn-lg btn-block" id="calculate">Calculate</button>
-          </div>
-          <div class="col-md-6">
-            <button type="button" class="btn btn-warning btn-lg btn-block" id="replay">Replay</button>
-          </div>
+          <h4 class="center">Welcome to Suzy's Pizza Pie.</h4>
         </div>
+          <div>
+            <p>We have been serving delicious pizza creations with my grandmother's secret recipe since 1959.</p>
+          </div>
+          <div class="form-group">
+            <form id="pizzaOrder" action="index.html" method="post">
+            <label for="name">Choose the size of your pizza pie:</label>
+            <select id="pizzaSize" class="form-control">
+              <option  value="small">Small 12 inches</option>
+              <option  value="medium">Medium 15 inches</option>
+              <option  value="large">Large 20 inches</option>
+            </select>
+          </div>
+          <div class="form-control">
+            <form action="/action_page.php" method="get">
+              <input type="checkbox" id="pepperoni" value="pepperoni">Pepperoni<br>
+              <input type="checkbox" id="mushrooms" value="mushrooms">Mushrooms<br>
+              <input type="checkbox" id="onions" value="onions">Onions<br>
+              <input type="checkbox" id="sausage" value="sausage">Sausage<br>
+              <input type="checkbox" id="bacon" value="bacon">Bacon<br>
+              <input type="checkbox" id="cheese" value="cheese">Extra Cheese<br>
+              <input type="checkbox" id="olives" value="olives">Black Olives<br>
+              <input type="checkbox" id="peppers" value="peppers">Green Peppers<br>
+              <input type="checkbox" id="tomatoes" value="tomatoes">Cherry Tomatoes<br>
+              <input type="checkbox" id="pineapple" value="pineapple">Pineapple<br>
+              <input type="checkbox" id="spinach" value="spinach">Spinach<br>
+            </form>
+            <button type="submit" name="button" id="order">Order</button>
+          </form>
       </form>
-      <h3 class="text-center margin">Computer says:</h3>
+      <h4>Your choice of pizza is:</h4>
+      <p class="personalPizza"></p>
       <br>
       <div class="row">
         <div class="col-md-5">
@@ -36,6 +54,7 @@
         <ul id="userOutput">
         </ul>
       </div>
-    </div>
+     </div>
+   </div>
   </body>
 </html>
