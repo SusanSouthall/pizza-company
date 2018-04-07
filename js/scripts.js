@@ -48,24 +48,5 @@ $(document).ready(function(){
     console.log(personalPizzaToppings);
 
   });
-
-    console.log(personalPizzaToppings);
-    // if(document.getElementById("#mushrooms").checked) {
-    //   console.log("mushrooms");
-    // }
-
-    //   }) {
-    //     personalPizza.size = "small";
-    //   }else if ($("#medium").attr("checked")) {
-    //     personalPizza.size = "medium";
-    //   }else {
-    //     personalPizza.size = "large";
-    //   }return personalPizza.size;
-    // }
-
-// var personalPizzaSize = checkSize();
-//     console.log(personalPizzaSize);
-//
-
   });
 });
