@@ -3,10 +3,13 @@
   background-size: cover;
 }
 
- p {
+.center{
   text-align: center;
 }
 
-.center{
-  text-align: center;
+.lettering {
+  float: right;
+  font-family: serif;
+  font-size: 75px;
+  color: black;
 }

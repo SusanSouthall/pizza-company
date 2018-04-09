@@ -1,7 +1,6 @@
-// NOTE: BEgins Business Logic.
+// NOTE: Begins Business Logic.
 
-
-function Pizza(size, toppings) {
+function Pizza(size,toppings) {
   this.size = size;
   this.toppings = toppings;
   }
@@ -16,37 +15,21 @@ Pizza.prototype.cost = function() {
   }
 }
 
-
-
-
-
 // NOTE: Begins User Interface Logic.
 
 $(document).ready(function(){
-
   $("#welcome").submit(function(event){
     event.preventDefault();
 
-    var pepperoni = $("#pepperoni").val();
-    var mushrooms = $("#mushrooms").val();
-    var onions = $("#onions").val();
-    var sausage = $("#sausage").val();
-    var bacon = $("#bacon").val();
-    var cheese = $("#cheese").val();
-    var olives = $("#olives").val();
-    var peppers = $("#peppers").val();
-    var tomatoes =$("#tomatoes").val();
-    var pineapple =$("#pineapple").val();
-    var spinach = $("#spinach").val();
-    var pizzaSize = $("#pizzaSize").val();
-    var pizzaToppings = ["pepperoni", "mushrooms", "onions", "sausage", "bacon", "cheese", "olives", "peppers", "tomatoes", "pineapple", "spinach"];
-    var personalPizzaToppings = [];
-    var personalPizza = new Pizza(pizzaSize, personalPizzaToppings);
-    //
-  $("input[type=checkbox]:checked").each(function(topping){
-     personalPizzaToppings.push(topping);
-    console.log(personalPizzaToppings);
+     var pizzaSize = $("#pizzaSize").val();
+     var personalPizzaToppings = [];
+    $("input:checkbox[name=pizzaTopping]:checked").each(function(){
+      personalPizzaToppings.push($(this).val());
+    });
 
-  });
+     var personalPizza = new Pizza(pizzaSize, personalPizzaToppings);
+
+     $("#userOutput").text("You have ordered a " + personalPizza.size + " pizza with " + personalPizza.toppings  + " for " + personalPizza.cost() + " .");
+     console.log(personalPizza);
   });
 });

@@ -11,10 +11,11 @@ A website that allows a person to choose pizza toppings and size and informs the
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| **A person can choose an individual topping.** | A person clicks on "pepperoni". | Output: "You have ordered a pepporoni pizza." |
+| **A person can choose an individual topping.** | A person clicks on "pepperoni". | Output: "You have ordered a pizza with pepperoni." |
 | **A person can choose a size of pizza.**| A person clicks on size: small. | Output: "You have ordered a small pizza." |
-| *Program determines price of pizza based on size.**| A person clicks on "pepperoni" and chooses size: small.  | Output: "You have ordered a small pepperoni pizza." |
-| **Program allows multiply toppings to be added to a pizza.** | A person clicks on "pepperoni" and "mushrooms". | Output: "You have ordered a pepperoni and mushroom pizza." |
+| **Program determines price of pizza based on size.**| A person clicks on "pepperoni" and chooses size: small.  | Output: "You have ordered a small pizza with pepperoni." |
+| **Program allows multiply toppings to be added to a pizza.** | A person clicks on "pepperoni" and "mushrooms". | Output: "You have ordered a small pizza with pepperoni, mushrooms." |
+| **Program displays cost of pizza at end of order.** | A person chooses size: small and clicks on "pepperoni". | Output: "You have ordered a small pizza with pepperoni for $10.00." |
 
 ## Setup/Installation Requirements
 
