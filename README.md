@@ -11,11 +11,11 @@ A website that allows a person to choose pizza toppings and size and informs the
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| **A person can choose an individual topping.** | A person clicks on "pepperoni". | Output: "You have ordered a pizza with pepperoni." |
-| **A person can choose a size of pizza.**| A person clicks on size: small. | Output: "You have ordered a small pizza." |
-| **Program determines price of pizza based on size.**| A person clicks on "pepperoni" and chooses size: small.  | Output: "You have ordered a small pizza with pepperoni." |
-| **Program allows multiply toppings to be added to a pizza.** | A person clicks on "pepperoni" and "mushrooms". | Output: "You have ordered a small pizza with pepperoni, mushrooms." |
-| **Program displays cost of pizza at end of order.** | A person chooses size: small and clicks on "pepperoni". | Output: "You have ordered a small pizza with pepperoni for $10.00." |
+| **A person can choose an individual topping.  Default size is small.** | A person clicks on "pepperoni". | Output: $10.50 |
+| **A person can choose a size of pizza.**| A person clicks on size: large. | Output: $20.00 |
+| **Program determines price of pizza based on size.**| A person clicks on "pepperoni" and chooses size: medium.  | Output: $15.50 |
+| **Program allows multiply toppings to be added to a pizza.** | A person clicks on "pepperoni" and "mushrooms". | Output: $11.00 |
+| **Program allows all toppings to be added to a pizza with a large size.** | A person clicks on "pepperoni", "mushrooms", "onions", "sausage", "bacon", "extra cheese", black olives", "green peppers", "cherry tomatoes", "pineapple", and "spinach". | Output: $25.50 |
 
 ## Setup/Installation Requirements
 
